@@ -2,12 +2,10 @@ import PyPDF2
 import os
 import shutil
 import yaml
-from datetime import datetime
 
 def extract():
     FILE_NAME = "../../data/2024-03-18/Toronto Local Appeal Body Combined Decisions - 2017.pdf"
     reader = PyPDF2.PdfReader(FILE_NAME)
-    print(f"Total pages: {len(reader.pages)}")
     return reader
 
 def transform_bookmarks(reader):
