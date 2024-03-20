@@ -18,7 +18,7 @@ TLAB decisions
         <td>{{ decision.year }}</td>
         <td>{{ decision.bookmark_name }}</td>
         <!-- Update the link to point to the correct file location -->
-        <td><a href="{{ site.baseurl }}/assets/tlab-decisions/2017/{{ decision.file_name }}">{{ decision.file_name }}</a></td>
+        <td><a href="{{ site.baseurl }}/assets/tlab-decisions/{{decision.year}}/{{ decision.file_name }}">{{ decision.file_name }}</a></td>
       </tr>
     {% endfor %}
   </tbody>
